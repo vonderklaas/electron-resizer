@@ -1,0 +1,19 @@
+{
+  "name": "electron-image-resizer",
+  "productName": "Image Resizer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Nick Garbalau",
+  "type": "commonjs",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^28.1.4",
+    "resize-img": "^2.0.0",
+    "toastify-js": "^1.12.0"
+  }
+}
