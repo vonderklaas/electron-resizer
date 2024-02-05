@@ -1,9 +1,7 @@
-## Electron Components
+### Description
 
-Electron's `main.js` process (backend) is a Node.js environment that has full system access.
-On the other hand, `renderer.js` processes (frontend) run web pages and do not run Node.js for security reasons.
-To bridge Electron's different process types together, we need a special script called a `preload.js` (context bridge)
-A `preload.js` script runs in a context that has access to both the HTML DOM and a limited subset of Node.js and Electron APIs.
+The file named `main.js` operates as a server process within a `Node.js` environment, granted full system access. Contrarily, processes named `renderer.js`, which serve as the frontend, execute web pages without running `Node.js` to enhance security.
 
-Another cornerstone of Electron app is `ipcRenderer` module, which is an EventEmitter. It provides a few methods so you can send synchronous and asynchronous messages from the `renderer.js` (frontend) to the `main.js` process (backend).
-Of course you can also receive replies from the main process.
+To facilitate communication between the disparate process types in Electron, a specialized script known as `preload.js` or a context bridge is employed. This `preload.js` script operates within a context that allows access to both the HTML DOM and a limited selection of `Node.js` and Electron APIs.
+
+Another fundamental component of an Electron application is the `ipcRenderer` module, functioning as an `EventEmitter`. It offers several methods enabling the sending of both synchronous and asynchronous messages from the `renderer.js` (frontend) to the `main.js` process (backend), as well as the receipt of responses from the main process.
